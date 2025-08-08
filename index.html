@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cape Ya</title>
+    <style>
+        body {
+            background: #f9f9f9;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .meme-container {
+            position: relative;
+            width: 350px;
+            height: 350px;
+            background: #fff;
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .meme-text {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 8px #000;
+            letter-spacing: 2px;
+        }
+        .meme-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+    <div class="meme-container">
+    <img class="meme-img" src="cat.gif" alt="Cape Ya Meme">
+    <div class="meme-text" onclick="alert('Cape banget!')"
+         style="cursor:pointer;">CAPE YA</div>
+</div>
+</body>
+</html>
